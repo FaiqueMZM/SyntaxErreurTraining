@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
 }
@@ -53,7 +53,8 @@ nav {
     color: #b74b4b;
     text-shadow: 0 0 10px #b74b4b;
 }
-.hamburg, .cancel {
+.hamburg,
+.cancel {
     cursor: pointer;
     position: absolute;
     right: 15px;
@@ -152,7 +153,7 @@ section .main-container {
     width: 40%;
 }
 .content h1 {
-    font-size: clamp(1rem, 1rem + 5vw, .8rem);
+    font-size: clamp(1rem, 1rem + 5vw, 0.8rem);
 }
 .content h1 span {
     color: #b74b4b;
@@ -170,7 +171,7 @@ section .main-container {
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
 }
-.social-links i{
+.social-links i {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -198,7 +199,7 @@ section .main-container {
     font-size: 120%;
     font-weight: 700;
     border-radius: 5px;
-    transition:  0.2s linear;
+    transition: 0.2s linear;
 }
 .content button:hover {
     background-color: transparent;
@@ -206,4 +207,319 @@ section .main-container {
     cursor: pointer;
     font-weight: 700;
     box-shadow: 0 0 40px #b74b4b;
+}
+
+section .content {
+    width: 80%;
+    margin: 0 auto;
+}
+.about .about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+section .title span {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #b74b4b;
+    left: 0;
+    bottom: 0;
+}
+section .title span::after {
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .about-details .left {
+    width: 45%;
+}
+.about .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.about .about-details .right {
+    width: 55%;
+}
+section .topic {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: px;
+}
+.about-details .right p {
+    text-align: justify;
+    color: white;
+}
+section .button {
+    margin: 16px 0;
+}
+section .button button {
+    outline: none;
+    padding: 8px 16px;
+    border: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: #b74b4b;
+    color: white;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+section .button button:hover {
+    background-color: white;
+    color: #b74b4b;
+    border-color: #b74b4b;
+}
+.skills {
+    background-color: black;
+}
+.skills .content {
+    padding: 40px 0;
+}
+.skills .skills-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-details .text {
+    width: 50%;
+}
+.skills-details p {
+    color: white;
+    text-align: justify;
+}
+.skills .skills-details .experience {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.skills-details .experience .num {
+    color: white;
+    font-size: 80px;
+}
+.skills-details .experience .exp {
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 6px;
+}
+.skills-details .boxes {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills-details .box {
+    width: calc(100% / 2 - 20px);
+    margin: 20px 0;
+}
+.skills-details .boxes .topic {
+    font-size: 20px;
+    color: #b74b4b;
+}
+.skills-details .boxes .per {
+    font-size: 60px;
+    color: #b74b4b;
+}
+.services .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services .boxes .box {
+    width: calc(100% / 3 - 20px);
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    color: white;
+    transition: all 0.4s ease;
+}
+.services .boxes .box:hover {
+    background-color: #b74b4b;
+    color: white;
+}
+.services .boxes .box .icon {
+    height: 50px;
+    width: 50px;
+    color: #b74b4b;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+.boxes .box:hover .icon {
+    background-color: white;
+    color: #b74b4b;
+}
+.services .boxes .box:hover topic,
+.services .boxes .box:hover p {
+    color: white;
+    transition: all 0.4s ease;
+}
+.contact {
+    background-color: black;
+}
+.contact .content {
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.contact .text {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+footer {
+    background-color: #b74b4b;
+    padding: 15px 0;
+    text-align: center;
+}
+footer .text span {
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+footer .text span a {
+    color: white;
+    font-weight: 500;
+}
+footer .text span a:hover {
+    text-decoration: underline;
+}
+.scroll-button a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    background-color: #b74b4b;
+    padding: 7px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .about .about-details {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about .about-details .left {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about .about-details .right {
+        width: 90%;
+        margin: 40px 0;
+    }
+    .services .boxes .box {
+        margin: 20px 0;
+        width: calc(100% / 2 -20px);
+    }
+}
+
+@media (max-width: 900px) {
+    .about .left img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 968px) {
+    nav .logo {
+        position: absolute;
+        left: 15px;
+        top: 16px;
+        font-size: 1.5rem;
+    }
+    section .main-container {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-container .links {
+        display: none;
+    }
+    .hamburg, .cancel {
+        opacity: 1;
+        pointer-events: visible;
+    }
+    .main-container .content {
+        margin-top: 20px;
+        width: 80%;
+    }
+    .social-links i {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+    .main-container .image {
+        z-index: -1;
+        width: 50%;
+        height: 60%;
+    }
+    .skills .skills-details {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .skills-details .text {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .skills-details .boxes {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .services .boxes .box {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .contact .text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-container .image {
+        width: 50%;
+        height: 60%;
+        margin-bottom: 0;
+    }
+    .main-container .content {
+        width: 80%;
+    }
+    .main-container .button {
+        margin-top: 15px;
+    }
+    .skills-details .boxes .per {
+        font-size: 50px;
+        color: #b74b4b;
+    }
 }
