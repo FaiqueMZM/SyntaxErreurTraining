@@ -6,7 +6,11 @@ module.exports = {
     "./public/**/*.{html,js}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ['Nunito']
+      }
+    },
   },
   plugins: [],
 }
