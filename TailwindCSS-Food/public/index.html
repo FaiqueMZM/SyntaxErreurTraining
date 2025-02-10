@@ -9,18 +9,39 @@
     <body class="text-gray-400 font-body bg-gray-100">
         <div class="grid md:grid-cols-3">
             <!--nav content-->
-            <div class="md:col-span-1">
-                <nav>
-                    <div>
+            <div class="md:col-span-1 md:flex md:justify-end">
+                <nav class="text-right">
+                    <div class="bg-white border-b flex justify-between items-center">
                         <h1
                             class="font-bold uppercase p-4 border-b border-gray-100"
                         >
-                            <a href="/">TailwindCSS Food</a>
+                            <a href="/" class="hover:text-gray-700"
+                                >TailwindCSS Food</a
+                            >
                         </h1>
+                        <div class="px-4 cursor-pointer md:hidden" id="hamburger">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                                />
+                            </svg>
+                        </div>
                     </div>
-                    <ul>
-                        <li class="text-gray-900 font-bold">
-                            <a href="#">
+                    <ul class="text-sm mt-6 hidden md:block" id="menu">
+                        <li class="text-gray-900 font-bold py-1">
+                            <a
+                                href="#"
+                                class="px-4 flex justify-end border-red-500 border-r-2"
+                            >
                                 <span>Home</span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +49,7 @@
                                     viewBox="0 0 24 24"
                                     stroke-width="1.5"
                                     stroke="currentColor"
-                                    class="w-5"
+                                    class="w-5 ml-2"
                                 >
                                     <path
                                         stroke-linecap="round"
@@ -38,8 +59,11 @@
                                 </svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="py-1">
+                            <a
+                                href="#"
+                                class="px-4 flex justify-end border-white border-r-2"
+                            >
                                 <span>About</span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +71,7 @@
                                     viewBox="0 0 24 24"
                                     stroke-width="1.5"
                                     stroke="currentColor"
-                                    class="w-5"
+                                    class="w-5 ml-2"
                                 >
                                     <path
                                         stroke-linecap="round"
@@ -57,8 +81,11 @@
                                 </svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="py-1">
+                            <a
+                                href="#"
+                                class="px-4 flex justify-end border-white border-r-2"
+                            >
                                 <span>Contact</span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +93,7 @@
                                     viewBox="0 0 24 24"
                                     stroke-width="1.5"
                                     stroke="currentColor"
-                                    class="w-5"
+                                    class="w-5 ml-2"
                                 >
                                     <path
                                         stroke-linecap="round"
@@ -86,12 +113,12 @@
                 <div class="flex justify-center md:justify-end">
                     <a
                         href="#"
-                        class="btn border-red-500 md:border-2 text-red-500"
+                        class="btn border-red-500 md:border-2 text-red-500 hover:bg-red-500 hover:text-white"
                         >Login</a
                     >
                     <a
                         href="#"
-                        class="btn border-red-500 md:border-2 text-red-500 ml-2"
+                        class="btn border-red-500 md:border-2 text-red-500 ml-2 hover:bg-red-500 hover:text-white"
                         >Signup</a
                     >
                 </div>
@@ -110,7 +137,7 @@
 
                     <div class="mt-8 grid lg:grid-cols-3 gap-10">
                         <!--card for recipes-->
-                        <div class="card">
+                        <div class="card hover:shadow-xl">
                             <img
                                 src="img/stew.jpg"
                                 alt="stew"
@@ -142,7 +169,7 @@
                                 <span>25 mins</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card hover:shadow-xl">
                             <img
                                 src="img/noodles.jpg"
                                 alt="noodles"
@@ -172,7 +199,7 @@
                                 <span>25 mins</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card hover:shadow-xl">
                             <img
                                 src="img/curry.jpg"
                                 alt="curry"
@@ -213,12 +240,15 @@
                     </div>
 
                     <div class="flex justify-center">
-                        <div class="btn bg-slate-200 text-red-500">
+                        <div
+                            class="btn bg-slate-200 text-gray-500 hover:shadow-inner"
+                        >
                             Load more
                         </div>
                     </div>
                 </div>
             </main>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>
