@@ -1,9 +1,9 @@
-import Message from "./message";
+import ListGroup from "./components/Listgroup";
 
 function App() {
     return (
         <div>
-            <Message />
+            <ListGroup />
         </div>
     );
 }
