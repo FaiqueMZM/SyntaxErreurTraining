@@ -45,7 +45,7 @@ const LoginScreen = () => {
                         type="email"
                         placeholder="Enter Email"
                         value={email}
-                        onChange={(e) => setEmail(e.target.target)}
+                        onChange={(e) => setEmail(e.target.value)}
                     ></Form.Control>
                 </Form.Group>
                 <Form.Group className="my-2" controlId="password">
@@ -54,7 +54,7 @@ const LoginScreen = () => {
                         type="password"
                         placeholder="Enter Password"
                         value={password}
-                        onChange={(e) => setPassword(e.target.target)}
+                        onChange={(e) => setPassword(e.target.value)}
                     ></Form.Control>
                 </Form.Group>
                 <Button type="submit" variant="primary" className="mt-3">
