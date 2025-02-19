@@ -45,7 +45,9 @@ const Header = () => {
                                         >
                                             Profile
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item>
+                                        <NavDropdown.Item
+                                            onClick={logoutHandler}
+                                        >
                                             Logout
                                         </NavDropdown.Item>
                                     </NavDropdown>
