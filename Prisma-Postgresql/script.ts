@@ -2,13 +2,16 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
-    const user = await prisma.user.findUnique({
+    const users = await prisma.user.findMany({
         where: {
-            email: "ronW@hogwarts.com",
+            age: 18,
+        },
+        orderBy: {
+            name: "desc",
         },
     });
 
-    console.log(user);
+    console.log(users);
 }
 
 main()
