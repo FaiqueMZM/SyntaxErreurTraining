@@ -11,7 +11,7 @@ async function main() {
         },
     });
 
-    console.log(users);
+    console.log(users.length);
 }
 
 main()
