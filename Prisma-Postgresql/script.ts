@@ -6,12 +6,9 @@ async function main() {
         where: {
             age: 18,
         },
-        orderBy: {
-            name: "desc",
-        },
     });
 
-    console.log(users.length);
+    console.log(users);
 }
 
 main()
