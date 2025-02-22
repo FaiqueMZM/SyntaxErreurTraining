@@ -2,23 +2,13 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
-    await prisma.user.deleteMany();
-    const users = await prisma.user.createMany({
-        data: [
-            {
-                name: "Harry",
-                email: "harrp@hogwarts.com",
-                age: 18,
-            },
-            {
-                name: "Ron",
-                email: "ronW@hogwarts.com",
-                age: 18,
-            },
-        ],
+    const user = await prisma.user.findUnique({
+        where: {
+            email: "ronW@hogwarts.com",
+        },
     });
 
-    console.log(users);
+    console.log(user);
 }
 
 main()
